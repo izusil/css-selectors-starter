@@ -820,7 +820,7 @@ tfoot {
     select all of the divs in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#borders, div{
+#borders div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -845,7 +845,7 @@ tfoot {
     select the second div in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-{
+#borders div div {
     width: 250px;
     height: 250px;
     border: 6px dotted var(--dv-orange);
@@ -857,7 +857,7 @@ tfoot {
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-    {
+#borders .dashed {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
@@ -869,7 +869,7 @@ tfoot {
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-    {
+#borders .dashed div {
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
@@ -881,7 +881,7 @@ tfoot {
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#borders div .dashed {
+#borders .dashed div div {
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
@@ -921,7 +921,7 @@ tfoot {
     select the div's before element in the pseudo-elements section using the ID, child/descendant, pseudo-element, and tag name selectors
 */
 /* ----- */
-{
+#pseudo-els > div::before {
     content: "\2730";
     padding: 12px 24px;
     border-radius: 50%;
